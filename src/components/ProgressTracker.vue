@@ -31,14 +31,15 @@ export default {
 <style scoped>
 .progress-tracker {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 0.2rem;
 }
 
 .progress-bar {
   background-color: #eee;
-  height: 20px;
-  border-radius: 10px;
+  height: 1.2rem;
+  border-radius: 1rem;
   overflow: hidden;
+  margin-bottom: 0;
 }
 
 .progress-bar div {

@@ -108,21 +108,21 @@ body {
 }
 .app-container {
   margin: 0 auto;
-  max-width: 400px;
+  max-width: 22rem;
   height: 90vh;
   overflow-y: auto;
   padding: 20px;
   font-family: "Arial", sans-serif;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
-  border-radius: 30px;
-  margin-top: 10px;
+  border-radius: 1.8rem;
+  margin-top: 0.5rem;
 }
 
 h1 {
   margin-top: 0;
   text-align: right;
   color: #5c677d;
-  font-size: 24px;
+  font-size: 1.3rem;
 }
 </style>

@@ -69,14 +69,14 @@ export default {
 <style scoped>
 .todo-container {
   max-width: 100%;
-  height: 40%;
+  height: 35%;
   overflow-y: auto;
 }
 .todo-list {
-  margin-bottom: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  margin-bottom: 0.8rem;
+  padding: 0.6rem;
+  border: 0.1px solid #ccc;
+  border-radius: 0.45rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -86,7 +86,7 @@ export default {
 <style scoped>
 h2 {
   color: #333;
-  margin-bottom: 10px;
+  margin-bottom: 0.6rem;
 }
 
 ul {
