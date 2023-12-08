@@ -67,7 +67,7 @@ export default {
 }
 
 .input-container {
-  position: relative;
+  display: flex;
 }
 
 .add-item-input {
@@ -90,11 +90,8 @@ export default {
   color: #5c677d;
   padding: 4px;
 }
+
 .add-button {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translate(-100%, -50%);
   border: none;
   color: #fff;
   cursor: pointer;
@@ -106,9 +103,22 @@ export default {
   margin-top: 10px;
   color: #7d8597;
 }
+
 h2 {
   color: #5c677d;
   font-size: 18px;
   font-style: italic;
+}
+
+@media screen and (max-width: 600px) {
+  .add-item-input {
+    width: 100%;
+  }
+
+  .add-button {
+    top: 0;
+    right: 0;
+    transform: translate(0, 0);
+  }
 }
 </style>

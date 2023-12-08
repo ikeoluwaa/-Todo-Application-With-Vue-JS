@@ -125,4 +125,13 @@ h1 {
   color: #5c677d;
   font-size: 1.3rem;
 }
+@media screen and (max-width: 600px) {
+  .app-container {
+    max-width: 100%;
+  }
+
+  h1 {
+    text-align: center;
+  }
+}
 </style>

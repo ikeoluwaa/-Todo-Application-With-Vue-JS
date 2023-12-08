@@ -66,12 +66,14 @@ export default {
   },
 };
 </script>
+
 <style scoped>
 .todo-container {
   max-width: 100%;
   height: 35%;
   overflow-y: auto;
 }
+
 .todo-list {
   margin-bottom: 0.8rem;
   padding: 0.6rem;
@@ -81,12 +83,17 @@ export default {
   justify-content: space-between;
   align-items: center;
   overflow-y: auto;
+  word-wrap: break-word;
 }
-</style>
-<style scoped>
+
 h2 {
   color: #333;
   margin-bottom: 0.6rem;
+  border-top: 1px solid #c8b6ff;
+  padding-top: 5px;
+  margin-top: 0;
+  text-transform: uppercase;
+  font-style: normal;
 }
 
 ul {
@@ -94,7 +101,6 @@ ul {
   padding: 0;
 }
 
-/* Style for each todo item */
 .todo-item {
   display: flex;
   justify-content: space-between;
@@ -104,6 +110,7 @@ ul {
   padding: 10px;
   margin-bottom: 10px;
   background-color: #fff;
+  word-wrap: break-word; /* Add word-wrap property */
 }
 
 .completed-checkbox {
@@ -115,6 +122,7 @@ ul {
   font-style: italic;
   margin-top: 10px;
 }
+
 .line-through {
   text-decoration: line-through;
 }
@@ -142,13 +150,20 @@ ul {
 .delete-button:hover {
   background-color: #d32f2f;
 }
-h2 {
-  border-top: 1px solid #c8b6ff;
-  color: #5c677d;
-  font-size: 16px;
-  padding-top: 5px;
-  margin-top: 0;
-  text-transform: uppercase;
-  font-style: normal;
+
+@media screen and (max-width: 600px) {
+  .todo-list {
+    flex-direction: column;
+    gap: 2px;
+
+    .completed-checkbox {
+      margin-right: 0;
+      margin-bottom: 5px;
+    }
+
+    .delete-button {
+      margin-top: 5px;
+    }
+  }
 }
 </style>

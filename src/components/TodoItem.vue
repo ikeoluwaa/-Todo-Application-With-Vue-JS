@@ -81,6 +81,13 @@ export default {
   font-size: 14px;
 }
 
+@media screen and (max-width: 600px) {
+  .todo-item {
+    overflow: hidden; /* Hide overflow on smaller screens */
+    white-space: pre-wrap; /* Enable word wrap on smaller screens */
+  }
+}
+
 .flex-container {
   display: flex;
   align-items: center;

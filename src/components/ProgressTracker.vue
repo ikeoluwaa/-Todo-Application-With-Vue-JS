@@ -48,4 +48,14 @@ export default {
   border-radius: 10px;
   transition: width 0.3s ease-in-out;
 }
+
+@media screen and (max-width: 600px) {
+  .progress-bar {
+    height: 0.8rem;
+
+    .progress-bar div {
+      border-radius: 8px;
+    }
+  }
+}
 </style>

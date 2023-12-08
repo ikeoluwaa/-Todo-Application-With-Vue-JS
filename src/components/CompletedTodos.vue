@@ -105,4 +105,20 @@ h2 {
   text-transform: uppercase;
   font-style: normal;
 }
+
+@media screen and (max-width: 600px) {
+  .completed-todo {
+    flex-direction: column;
+    gap: 1px;
+  }
+
+  .completed-checkbox {
+    margin-right: 0; /* Remove margin for smaller screens */
+    margin-bottom: 5px; /* Add some space between checkbox and text */
+  }
+
+  .delete-button {
+    margin-top: 5px; /* Add some space above the delete button */
+  }
+}
 </style>
